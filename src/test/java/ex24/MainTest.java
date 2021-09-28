@@ -14,6 +14,11 @@ class MainTest {
             Arrays.sort(arrays1);
             Arrays.sort(arrays2);
 
-            System.out.print(Arrays.equals(arrays1, arrays2));
+            if(Arrays.equals(arrays1, arrays2)){
+                System.out.print("The two words are anagrams.");
+            }
+            else{
+                System.out.print("The two words are not anagrams.");
+            }
     }
 }

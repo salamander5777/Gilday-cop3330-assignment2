@@ -11,6 +11,6 @@ class MainTest {
         for(int i = 0; i < 5; i++){
             AN = AN + 1;
         }
-        System.out.print(AN);
+        System.out.print("The total is " + AN + ".");
     }
 }

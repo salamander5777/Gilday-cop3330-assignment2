@@ -15,6 +15,6 @@ class PaymentCalculatorTest {
         Assertions.assertEquals(APR, 12.0);
         Assertions.assertEquals(p, 100.0);
         Assertions.assertEquals(i, (APR/100)/365);
-        System.out.print(Math.ceil(-(1.0/30.0)*Math.log(1+(b/p)*(1.0-Math.pow(1.0+i, 30)))/Math.log(1+i)));
+        System.out.print("It will take you " + Math.ceil(-(1.0/30.0)*Math.log(1+(b/p)*(1.0-Math.pow(1.0+i, 30)))/Math.log(1+i)) + " months to pay off this card.");
     }
 }

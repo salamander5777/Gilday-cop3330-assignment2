@@ -38,7 +38,9 @@ class MainTest {
                     Spe = 1;
                 }
             }
-            System.out.print(Num+ Alphabet +Spe+1);
+
+            int MetRules = Num+ Alphabet + Spe +1;
+            System.out.print(MetRules == 1 ? "The password is a very weak password." : MetRules == 2 ? "The password is a weak password." : MetRules == 3 ? "The password is an average password." : MetRules == 4 ? "The password is a strong password." : "The password is a very strong password.");
         }
     }
 }

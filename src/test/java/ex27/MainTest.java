@@ -2,8 +2,6 @@ package ex27;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class MainTest {
 
     @Test
@@ -18,6 +16,9 @@ class MainTest {
         }
         else if(!Character.toString(arraysID[0]).matches("[A-Z]") || !Character.toString(arraysID[1]).matches("[A-Z]") || !Character.toString(arraysID[2]).matches("-")|| !Character.toString(arraysID[3]).matches("[0-9]") || !Character.toString(arraysID[4]).matches("[0-9]") || !Character.toString(arraysID[5]).matches("[0-9]") || !Character.toString(arraysID[6]).matches("[0-9]")){
             System.out.print("\nThe employee ID must be in the format of AA-1234.");
+        }
+        else{
+            System.out.print("There were no errors found.");
         }
     }
 }

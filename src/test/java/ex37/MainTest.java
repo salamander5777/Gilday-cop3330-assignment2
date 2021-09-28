@@ -37,6 +37,6 @@ class MainTest {
                 indexTotal = indexTotal + 1;
             }
         }while(indexLA <= passwordLength/2 || indexTotal < passwordLength || indexSCA < specialCharacterAmount || indexNC < numberCount);
-        System.out.print(password);
+        System.out.print("Your password is " + password);
     }
 }

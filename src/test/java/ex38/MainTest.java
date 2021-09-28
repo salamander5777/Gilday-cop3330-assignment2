@@ -9,7 +9,7 @@ class MainTest {
 
     @Test
     void filterEvenNumbers() {
-        String input_numbers = "1 2 3 4 5 6 7 8"; //Reads in a string of numbers.
+        String input_numbers = "1 2 3 4 5 6 7 8"; //The input string of numbers.
         String[] numberArray = input_numbers.split(" ");
         ArrayList<Integer> evenArray = new ArrayList<>();
 
@@ -18,6 +18,6 @@ class MainTest {
                 evenArray.add(Integer.parseInt(s));
             }
         }
-        System.out.print(Arrays.toString(evenArray.toArray(new Integer[0])));
+        System.out.print("The even numbers are " + Arrays.toString(evenArray.toArray(new Integer[0])).replace("[", "").replace("]", "").replace(",", "") + ".");
     }
 }

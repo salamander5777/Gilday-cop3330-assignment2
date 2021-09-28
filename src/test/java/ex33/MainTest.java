@@ -7,6 +7,7 @@ class MainTest {
 
     @Test
     void magicEightAnswer() {
+        System.out.print("Is this a question?\n> ");
         Random notYetMagicEight = new Random();
         int moreThanEight = 4;
         int magicEight = notYetMagicEight.nextInt(moreThanEight);

@@ -18,6 +18,6 @@ class MainTest {
         else{
             System.out.print("Sorry. That's not a valid input.\n");
         }
-        System.out.print(years);
+        System.out.print("It will take " + years + " years to double your initial investment.");
     }
 }
